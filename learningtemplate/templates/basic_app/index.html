@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html"%}
+{% block body_block %}
+    <h1>Welcome to index page</h1>
+    <h2>{{ name|upper }}</h2>
+    <h2>{{ number|add:"99" }}</h2>
+    <h2>{{ email|cut:"@" }}</h2>
+
+{% endblock %}
+
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Index</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--    <h1>This is index page</h1>-->
+<!--    <a href="{% url 'basic_app:others' %}">Other page</a>-->
+<!--    <a href="{% url 'admin:index' %}">Admin Page</a>-->
+
+<!--</body>-->
+<!--</html>-->

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users List</title>
+</head>
+<body>
+
+    <h1>Here are your users!</h1>
+    <div class="userclass">
+        {% if access_user %}
+
+        <ol>
+            {% for user in access_user %}
+            <li>User Info</li>
+            <ul>
+                <li>{{ user.first_name }}</li>
+                <li>{{ user.last_name }}</li>
+                <li>{{ user.email }}</li>
+            </ul>
+            {% endfor %}
+        </ol>
+
+        {% else %}
+            <p>No user listed</p>
+        {% endif %}
+
+
+    </div>
+
+</body>
+</html>
